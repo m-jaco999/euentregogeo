@@ -47,10 +47,10 @@ public class GeoLocationController {
 			}
 		}
 
-			Double resultado;
+			Double resultDist;
 
-			resultado = distance(latitude.get(0),latitude.get(1),longitude.get(0),longitude.get(1));
-			response.put("endereço:","O endereço 1 possui "+resultado+" de distância do endereço 2");
+			resultDist = distance(latitude.get(0),latitude.get(1),longitude.get(0),longitude.get(1));
+			response.put("distancia:","O endereco 1 possui "+resultDist+" de distancia do endereço 2");
 
 		return ResponseEntity.ok(response);
 	}
